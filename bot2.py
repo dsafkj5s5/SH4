@@ -6,6 +6,7 @@ import random
 import string
 from telebot import types
 from gatet import *
+from gate1 import *
 from reg import reg
 from datetime import datetime, timedelta
 from faker import Faker
@@ -13,9 +14,9 @@ from multiprocessing import Process
 import threading
 from bs4 import BeautifulSoup
 stopuser = {}
-token ='6705936668:AAHGtNBRtgDJfqEkcuiGvB1UrkhBCQ6pTg0'
+token ='7286558203:AAGaSQYsSHYQEh9-RtQP0rtp0KerUPI_0VA'
 bot=telebot.TeleBot(token,parse_mode="HTML")
-admin=7299267966
+admin=7089160375
 command_usage = {}
 def reset_command_usage():
 	for user_id in command_usage:
@@ -46,10 +47,10 @@ def start(message):
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)
 		if BL == '𝗙𝗥𝗘𝗘':	
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 			keyboard.add(contact_button)
 			random_number = random.randint(33, 82)
-			photo_url = f'https://t.me/Dow993uf/{random_number}'
+			photo_url = f'https://t.me/H_5_88/{random_number}'
 			bot.send_photo(chat_id=message.chat.id, photo=photo_url, caption=f'''<b>🌀 𝗛𝗘𝗟𝗟𝗢 {name}
 ━━━━━━━━━━━━━━━━  
 🌀 𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝗕𝗢𝗧 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘  
@@ -76,11 +77,11 @@ def start(message):
 ,reply_markup=keyboard)
 			return
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/Dow993uf")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/H_5_88")
 		keyboard.add(contact_button)
 		username = message.from_user.first_name
 		random_number = random.randint(33, 82)
-		photo_url = f'https://t.me/Dow993uf'
+		photo_url = f'https://t.me/H_5_88'
 		bot.send_photo(chat_id=message.chat.id, photo=photo_url, caption='''𝘾𝙡𝙞𝙘𝙠 /cmds 𝙏𝙤 𝙑𝙞𝙚𝙬 𝙏𝙝𝙚 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙊𝙧 𝙎𝙚𝙣𝙙 𝙏𝙝𝙚 𝙁𝙞𝙡𝙚 𝘼𝙣𝙙 𝙄 𝙒𝙞𝙡𝙡 𝘾𝙝𝙚𝙘𝙠 𝙄𝙩''',reply_markup=keyboard)
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
@@ -132,7 +133,7 @@ def main(message):
 			with open('data.json', 'w') as json_file:
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 			keyboard.add(contact_button)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
@@ -166,7 +167,7 @@ def main(message):
 			provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 		except Exception as e:
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 			keyboard.add(contact_button)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
@@ -197,7 +198,7 @@ def main(message):
 		required_duration = timedelta(hours=0)
 		if current_time - provided_time > required_duration:
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Monster_990")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 			keyboard.add(contact_button)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 		''',reply_markup=keyboard)
@@ -210,7 +211,7 @@ def main(message):
 			return
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text=f"🏴‍☠️ 𝗕𝗥𝗔𝗜𝗡𝗧𝗥𝗘𝗘 𝗔𝗨𝗧𝗛 🏴‍☠️",callback_data='br')
-		sw = types.InlineKeyboardButton(text=f" 𝗦𝗤𝗨𝗔𝗥𝗘 𝗔𝗨𝗧𝗛 🪽",callback_data='sq')
+		sw = types.InlineKeyboardButton(text=f" STRIPE 𝗔𝗨𝗧𝗛 🪽",callback_data='sq')
 		keyboard.add(contact_button)
 		keyboard.add(sw)
 		bot.reply_to(message, text=f'𝘾𝙝𝙤𝙤𝙨𝙚 𝙏𝙝𝙚 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩 𝙏𝙤 𝙐𝙨𝙚',reply_markup=keyboard)
@@ -239,7 +240,7 @@ def menu_callback(call):
 			}
 				for cc in lino:
 					if stopuser[f'{id}']['status'] == 'stop':
-						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @Dow993uf')
+						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @H_5_88')
 						return
 					try:
 						data = requests.get('https://lookup.binlist.net/'+cc[:6]).json()
@@ -299,7 +300,7 @@ def menu_callback(call):
 					bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
 					  text=f'''🌀 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 𝙒𝙝𝙞𝙡𝙚 𝙔𝙤𝙪𝙧 𝘾𝙖𝙧𝙙𝙨 𝘼𝙧𝙚 𝘽𝙚𝙞𝙣𝙜 𝘾𝙝𝙚𝙘𝙠𝙚𝙙 𝘼𝙩 𝙏𝙝𝙚 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 {gate}
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf''', reply_markup=mes)
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88''', reply_markup=mes)
 					
 					msg = f'''<b>𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 ✅
 
@@ -312,7 +313,7 @@ def menu_callback(call):
 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: {country} {country_flag}
 
 𝗧𝗶𝗺𝗲: {"{:.2f}".format(execution_time)} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
 
 					msg_cvv = f'''<b>𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 𝘾𝘾𝙉 ✅
 
@@ -325,7 +326,7 @@ def menu_callback(call):
 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: {country} {country_flag}
 
 </b>
-<b>𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
+<b>𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
 
 					if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'live' in last:
 						live += 1
@@ -343,14 +344,14 @@ def menu_callback(call):
 		stopuser[f'{id}']['status'] = 'start'
 		bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
-					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @Dow993uf')
+					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @H_5_88')
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
 @bot.callback_query_handler(func=lambda call: call.data == 'sq')
 def menu_callback(call):
 	def my_function():
 		id=call.from_user.id
-		gate='𝗦𝗤𝗨𝗔𝗥𝗘 𝗔𝗨𝗧𝗛'
+		gate='STRIPE 𝗔𝗨𝗧𝗛'
 		dd = 0
 		live = 0
 		riskk = 0
@@ -368,7 +369,7 @@ def menu_callback(call):
 			}
 				for cc in lino:
 					if stopuser[f'{id}']['status'] == 'stop':
-						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @Dow993uf')
+						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @H_5_88')
 						return
 					try:
 						data = requests.get('https://lookup.binlist.net/'+cc[:6]).json()
@@ -402,7 +403,7 @@ def menu_callback(call):
 					
 					start_time = time.time()
 					try:
-						last = str(sq(cc))
+						last = str(Tele1(cc))
 					except Exception as e:
 						print(e)
 						last = "ERROR"
@@ -429,7 +430,7 @@ def menu_callback(call):
 					bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
 					  text=f'''𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 𝙒𝙝𝙞𝙡𝙚 𝙔𝙤𝙪𝙧 𝘾𝙖𝙧𝙙𝙨 𝘼𝙧𝙚 𝘽𝙚𝙞𝙣𝙜 𝘾𝙝𝙚𝙘𝙠 𝘼𝙩 𝙏𝙝𝙚 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 {gate}
-𝘽𝙤𝙩 𝘽𝙮 @Dow993uf''', reply_markup=mes)
+𝘽𝙤𝙩 𝘽𝙮 @H_5_88''', reply_markup=mes)
 					
 					msg=f'''<b>𝘼𝙥𝙥𝙧𝙤𝙫𝙚𝙙 ✅
 			
@@ -441,8 +442,8 @@ def menu_callback(call):
 𝘽𝙞𝙣 ➼ {cc[:6]}
 𝙄𝙨𝙨𝙪𝙚𝙧 ➼ {bank}
 𝙏𝙞𝙢𝙚 ➼ {"{:.1f}".format(execution_time)}
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
-					if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'live' in last:
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
+					if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last or 'live' in last or 'successfully' in last:
 						live += 1
 						bot.send_message(call.from_user.id, msg)
 					elif 'risk' in last:
@@ -457,7 +458,7 @@ def menu_callback(call):
 		stopuser[f'{id}']['status'] = 'start'
 		bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
-					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @Dow993uf')
+					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @H_5_88')
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.chk') or message.text.lower().startswith('/chk'))
@@ -485,7 +486,7 @@ def respond_to_vbv(message):
 		BL='𝗙𝗥𝗘𝗘'
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
@@ -519,7 +520,7 @@ def respond_to_vbv(message):
 		provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
@@ -550,7 +551,7 @@ def respond_to_vbv(message):
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 	''',reply_markup=keyboard)
@@ -620,7 +621,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: {country} {country_flag}
 
 𝗧𝗶𝗺𝗲: {"{:.2f}".format(execution_time)} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
 	msgd=f'''<b>𝘿𝙚𝙘𝙡𝙞𝙣𝙚𝙙 ❌
 
 𝗖𝗮𝗿𝗱: <code>{cc}</code>
@@ -632,7 +633,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: {country} {country_flag}
 
 𝗧𝗶𝗺𝗲: {"{:.2f}".format(execution_time)} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
 
 	msgcc = f'''<b>𝐀𝐩𝐩𝐫𝐨𝐯𝐞𝐝 CCN ✅
 
@@ -645,7 +646,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 𝐂𝐨𝐮𝐧𝐭𝐫𝐲: {country} {country_flag}
 
 𝗧𝗶𝗺𝗲: {"{:.2f}".format(execution_time)} 𝐬𝐞𝐜𝐨𝐧𝐝𝐬
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
 
 	if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
@@ -745,7 +746,7 @@ def respond_to_vbv(message):
 			json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
@@ -779,7 +780,7 @@ def respond_to_vbv(message):
 		provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
@@ -810,7 +811,7 @@ def respond_to_vbv(message):
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/Dow993uf")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/H_5_88")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 	''',reply_markup=keyboard)
@@ -873,7 +874,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 𝘽𝙞𝙣 ➼ {cc[:6]}
 𝙄𝙨𝙨𝙪𝙚𝙧 ➼ {bank}
 𝙏𝙞𝙢𝙚 ➼ {"{:.1f}".format(execution_time)}
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
 	msgd=f'''<b>𝗥𝗲𝗷𝗲𝗰𝘁𝗲𝗱 ❌
 			
 𝘾𝙖𝙧𝙙 ➼ <code>{cc}</code>
@@ -884,7 +885,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 𝘽𝙞𝙣 ➼ {cc[:6]}
 𝙄𝙨𝙨𝙪𝙚𝙧 ➼ {bank}
 𝙏𝙞𝙢𝙚 ➼ {"{:.1f}".format(execution_time)}
-𝗕𝗼𝘁 𝗕𝘆: @Dow993uf</b>'''
+𝗕𝗼𝘁 𝗕𝘆: @H_5_88</b>'''
 	if 'Authenticate Attempt Successful' in last or 'Authenticate Successful' in last or 'authenticate_successful' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
 	else:
@@ -893,7 +894,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 def menu_callback(call):
 	id=call.from_user.id
 	stopuser[f'{id}']['status'] = 'stop'
-print("Runing Bot Don | Dow993uf.t.me .")
+print("Runing Bot Don | H_5_88.t.me .")
 while True:
 	try:
 		bot.polling(none_stop=True)
